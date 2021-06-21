@@ -74,14 +74,6 @@ public class Tokenizador {
         return null;
     }
     
-    public static void actualizar(SolicitudesServidor or) {
-        try{
-            ArrayList<Usuario> l = or.getUsers();
-            actualizar(l);
-        }catch(Exception e){
-            
-        }    
-    }
     
     public static void actualizar( ArrayList<Usuario> users) {
         try {

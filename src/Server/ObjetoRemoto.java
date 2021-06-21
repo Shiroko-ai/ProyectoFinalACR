@@ -53,6 +53,7 @@ public class ObjetoRemoto extends UnicastRemoteObject implements SolicitudesServ
     }
 
     public boolean darAcceso(String usuario, String contrasena) throws RemoteException {
+        leer();
         boolean acceso = false;
         try {
             boolean validacionUsuario = false;
@@ -134,8 +135,8 @@ public class ObjetoRemoto extends UnicastRemoteObject implements SolicitudesServ
     }
 
     public String depositarDinero(float cantidad, Usuario u) throws RemoteException {
-        String retiro = null;
         leer();
+        String retiro = null;
         try {
             Usuario a = new Usuario(u);
             System.out.println("Cantidad: "+cantidad);
@@ -194,10 +195,6 @@ public class ObjetoRemoto extends UnicastRemoteObject implements SolicitudesServ
 
         }
 
-    }
-
-    public ArrayList<Usuario> getUsers() throws RemoteException{
-        return users;
     }
 
 }

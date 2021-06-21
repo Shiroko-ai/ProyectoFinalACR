@@ -211,7 +211,6 @@ public class JFrameLogin extends javax.swing.JFrame implements Serializable {
         this.jButton1.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    Tokenizador.actualizar(objRemoto);;
                     //Obtener usuario y contraseña
                     String usuario = jTextField1.getText();
                     String contrasena = jTextField3.getText();

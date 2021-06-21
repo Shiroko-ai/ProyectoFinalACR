@@ -28,5 +28,4 @@ public interface SolicitudesServidor extends Remote{
     public String getNombre_usuario(int ID) throws RemoteException;
     public int getID(int ID) throws RemoteException; 
     public String getContra(int ID) throws RemoteException;
-    public ArrayList<Usuario> getUsers() throws RemoteException;
 }

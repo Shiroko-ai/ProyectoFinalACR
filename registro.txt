@@ -3,3 +3,4 @@
 3,a,a,jose,nava,300.0
 4,as,as,as,as,0.0
 5,df,df,df,df,0.0
+6,KillerMike,qwerty,Mike,Tyson,1000.0

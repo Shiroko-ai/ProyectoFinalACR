@@ -16,6 +16,7 @@ import javax.swing.JFrame;
 /**
  *
  * @author LAST_
+ * En esta GUI se muestran los detalles de la cuenta con sesion inniciada
  */
 public class JFrameDetallesCuenta extends javax.swing.JFrame {
     Usuario usu;

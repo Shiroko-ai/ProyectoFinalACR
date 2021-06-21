@@ -16,6 +16,7 @@ import javax.swing.JFrame;
 /**
  *
  * @author LAST_
+ * Esta GUI es el menu principal una vez iniciada sesion
  */
 public class JFrameCuenta extends javax.swing.JFrame {
     

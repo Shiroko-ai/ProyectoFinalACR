@@ -22,6 +22,7 @@ import javax.swing.JTextField;
 /**
  *
  * @author LAST_
+ * En esta clase estan definidos todos los metodos remotos
  */
 public class ObjetoRemoto extends UnicastRemoteObject implements SolicitudesServidor {
 

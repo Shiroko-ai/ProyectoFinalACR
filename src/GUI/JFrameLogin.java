@@ -23,6 +23,8 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author LAST_
+ * Esta es la Gui donde uinicia la aplicacion, aqui se puede iniciar sesion o 
+ * cpomenzar con el registro
  */
 public class JFrameLogin extends javax.swing.JFrame implements Serializable {
     

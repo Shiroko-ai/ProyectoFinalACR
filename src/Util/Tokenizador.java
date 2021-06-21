@@ -16,6 +16,7 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author DKghost
+ * En esta clase se realiza la lectura de los datos y la actualizacion del registro
  */
 public class Tokenizador {
 

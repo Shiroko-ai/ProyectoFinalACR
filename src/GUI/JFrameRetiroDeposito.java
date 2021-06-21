@@ -24,6 +24,7 @@ import javax.swing.JFrame;
 /**
  *
  * @author LAST_
+ * Esta es la GUI para el Depoosito/Retiro de dinero
  */
 public class JFrameRetiroDeposito extends javax.swing.JFrame {
     

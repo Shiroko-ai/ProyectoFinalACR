@@ -12,23 +12,16 @@ import java.rmi.registry.Registry;
 /**
  *
  * @author LAST_
+ * El servidor RMI implementado con hilos
  */
-public class ServidorRMI {
-
-    public ServidorRMI() {
-        try {
-            ObjetoRemoto obj = new ObjetoRemoto();
-            // hacer registro del obj remoto
-            Registry reg = LocateRegistry.createRegistry(1099);
-            // refencia al objeto remoto
-            reg.rebind("token", obj);
-            System.out.println("servidor activo...");
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
+public class ServidorRMI implements Runnable{
+    
+    public static void main(String[] args){
+        (new Thread(new ServidorRMI())).start();
     }
-
-    public static void main(String args[]) {
+    
+    @Override
+    public void run() {
         try {
             ObjetoRemoto obj = new ObjetoRemoto();
             // hacer registro del obj remoto

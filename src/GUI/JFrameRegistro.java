@@ -15,6 +15,7 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author DKghost
+ * Esta es la GUI para realizar nuevos registros de usuarios
  */
 public class JFrameRegistro extends javax.swing.JFrame {
 

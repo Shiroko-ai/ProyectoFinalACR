@@ -13,6 +13,7 @@ import javax.swing.JTextField;
 /**
  *
  * @author LAST_
+ * Esta es la interfaz del desrvidor
  */
 public interface SolicitudesServidor extends Remote{
     ArrayList<Usuario> users = new ArrayList<>();

@@ -18,6 +18,7 @@ public class Usuario implements Serializable{
     public String nombre_usuario;
     public int ID;
     public String contra;
+    
     public Usuario(int ID, String nombre, String apellido, float dinero, String nombre_usuario,String contrasena) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -26,6 +27,16 @@ public class Usuario implements Serializable{
         this.ID = ID;
         this.contra= contrasena;
     }
+
+    public float getDinero() {
+        return dinero;
+    }
+
+    public void setDinero(float dinero) {
+        this.dinero = dinero;
+    }
+    
+    
 
     
     

@@ -21,7 +21,6 @@ public interface SolicitudesServidor extends Remote{
     public String retirarDinero(float cantidad, Usuario u) throws RemoteException;
     public String depositarDinero(float cantidad, Usuario u) throws RemoteException;
     public Usuario buscarUsuario(String nombre, String contrasena) throws RemoteException;
-    public void registrarUsuario() throws RemoteException;
     public String getNombre(int ID) throws RemoteException; 
     public String getApellido(int ID) throws RemoteException;
     public float getDinero(int ID) throws RemoteException;

@@ -103,10 +103,6 @@ public class ObjetoRemoto extends UnicastRemoteObject implements SolicitudesServ
         return u;
     }
 
-    public void registrarUsuario() throws RemoteException {
-
-    }
-
     public String retirarDinero(float cantidad, Usuario u) throws RemoteException {
         String retiro = null;
         leer();
@@ -114,9 +110,9 @@ public class ObjetoRemoto extends UnicastRemoteObject implements SolicitudesServ
             //Si se tiene mas dinero que el supuesto retiro
             Usuario a = new Usuario(u);
             int cant = (int) cantidad;
-            int dine = (int) a.getDinero();
+            int dine = (int) users.get(a.getID()-1).getDinero();
             System.out.println("Cantidad: "+cant);
-            System.out.println("Dinero antes: "+dine);
+            System.out.println("Dinero antes: "+users.get(a.getID()-1).getDinero());
             if (dine >= cant) {
                 float total = users.get(a.getID()-1).getDinero()-cantidad;
                 users.get(a.getID()-1).setDinero(total);
@@ -138,7 +134,8 @@ public class ObjetoRemoto extends UnicastRemoteObject implements SolicitudesServ
         leer();
         String retiro = null;
         try {
-            Usuario a = new Usuario(u);
+//            Usuario a = new Usuario(u);
+            Usuario a = new Usuario(u.getID(),u.getNombre(),u.getApellido(),u.getDinero(),u.getNombre_usuario(),u.getContra());
             System.out.println("Cantidad: "+cantidad);
             System.out.println("Dinero antes: "+users.get(a.getID()-1).getDinero());
             float total = cantidad + users.get(a.getID()-1).getDinero();

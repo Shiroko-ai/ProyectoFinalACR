@@ -29,7 +29,7 @@ import javax.swing.JOptionPane;
 public class JFrameLogin extends javax.swing.JFrame implements Serializable {
     
     SolicitudesServidor objRemoto;
-
+    public boolean ocupado = true;
     /**
      * Creates new form JFrameLogin
      */
@@ -148,7 +148,9 @@ public class JFrameLogin extends javax.swing.JFrame implements Serializable {
     }//GEN-LAST:event_jTextField3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        System.exit(WIDTH);
+           ocupado = false;
+           this.dispose();
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -236,6 +238,6 @@ public class JFrameLogin extends javax.swing.JFrame implements Serializable {
     }
     
     public void cerrar(){
-        this.dispose();
+        this.setVisible(false);
     }
 }
